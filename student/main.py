@@ -22,7 +22,7 @@ def get_db():
 # tags is used to grouping the apis in tags in swagger
 @app.post('/student',status_code= status.HTTP_201_CREATED,  tags=['students'])
 def create(student: schemas.StudentModel, db: Session = Depends(get_db)):
-    new_student = models.Student( name = student.name, enrolled = student.enrolled)
+    new_student = models.Student( name = student.name, enrolled = student.enrolled, user_id = 1)
     db.add(new_student)
     db.commit()
     db.refresh(new_student)
