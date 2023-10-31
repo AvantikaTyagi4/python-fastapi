@@ -1,5 +1,24 @@
+-- libraries installed
+FastAPI
+uvicorn
+sqlalchemy
+pip install "passlib[bcrypt]"
+
+-- Steps to create Virtual Environment
+-- install virtual Environment:  pip install virtualenv
+-- create Virtual Environment in Directory: virtualenv venv (venv is virtual Environment name)
+-- Activate virtual Environment: venv\Scripts\activate 
+-- Deactivate virtual Environment: deactivate
+-- Create a file name requirements.txt and add all libraries needed
+-- To install libraries in requirements.txt:  python -m pip install -r requirements.txt
+
+
+
 -- to run the project 
 uvicorn main:app --reload
+
+--to run app on different port
+uvicorn main:app --reload --port 8080    
 
 -- main is file name, app is instance name of FastAPI, reload is used to automatically rerun the project after any change
 
