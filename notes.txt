@@ -1,0 +1,13 @@
+-- to run the project 
+uvicorn main:app --reload
+
+-- main is file name, app is instance name of FastAPI, reload is used to automatically rerun the project after any change
+
+
+-- routes are path
+-- http methods are called operation
+-- function above which we definining the path is called path operation function
+-- @app is called path operator decorator
+-- Always place the path variable Url with similar routes above the methods with path variable because fast api is interpreter
+-- FastAPI has Swagger ui integrated we can access it using http://localhost:8000/docs
+-- FastAPI also supports redoc just like swagger
